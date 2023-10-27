@@ -12,18 +12,18 @@ const Result = () => {
     console.log(filteredArr);
     if(!question && !selectedNum){
       return (
-        nav('/')
+        nav('/Baydin')
       )
     }
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center scale-up-center'>
         <div className="question my-10 text-center">
           <span className='text-2xl text-orange-500'>မေးခွန်း</span>
           <h5 className='text-2xl mt-5 text-green-500 min-[300px]:p-3'>{question.questionName}</h5>
         </div>
         <h1 className='text-2xl text-orange-500'>ရလဒ် :</h1>
         <h3 className="mt-5 text-2xl mb-10 min-[300px]:p-2 text-center">{filteredArr.answerResult}</h3>
-        <Link to={'/'}><Button name="ထပ်မေးမယ်" /></Link>        
+        <Link to={'/Baydin'}><Button name="ထပ်မေးမယ်" /></Link>        
     </div>
   )
 }

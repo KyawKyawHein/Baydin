@@ -9,12 +9,12 @@ const LuckyTable = () => {
   console.log(numbersList);
   if(!question){
     return(
-      nav('/')
+      nav('/Baydin')
     )
   }
   return (
-    <div className='flex flex-col items-center'>
-        <Link to={'/'}><Button name="နောက်သို့" /></Link>
+    <div className='flex flex-col items-center scale-up-center'>
+        <Link to={'/Baydin'}><Button name="နောက်သို့" /></Link>
         <div className="question my-5 text-center">
           <span className='text-3xl text-orange-500'>မေးခွန်း</span>
           <h5 className='text-2xl mt-3 text-green-400 min-[300px]:p-3'>{question.questionName}</h5>
@@ -24,7 +24,7 @@ const LuckyTable = () => {
         {
           numbersList.map((number,index)=>{
             return (
-              <Link to={'/result'} key={index} onClick={()=>dispatch({type:"addSelectedNum",payload:number.eng})}>
+              <Link to={'/Baydin/result'} key={index} onClick={()=>dispatch({type:"addSelectedNum",payload:number.eng})}>
                 <div  className="flex justify-center items-center bg-red-500 w-[50px] h-[50px] hover:bg-white hover:text-black cursor-pointer rounded rounded-full">
                   {number.myan}
                 </div>

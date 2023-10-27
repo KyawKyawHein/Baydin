@@ -12,8 +12,9 @@ const App = () => {
       <Nav/>
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/lucky-table' element={<LuckyTable/>} />
-        <Route path='/result' element={<Result/>} />
+        <Route path="/Baydin" element={<Home/>} />
+        <Route path='/Baydin/lucky-table' element={<LuckyTable/>} />
+        <Route path='/Baydin/result' element={<Result/>} />
       </Routes>
 
     </div>
