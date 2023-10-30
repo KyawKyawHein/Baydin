@@ -5,7 +5,6 @@ import { StateContextCustom } from '../Context/StateContext'
 
 const Nav = () => {
   const {state:{questionsList},dispatch,search,setSearch} = StateContextCustom()
-  console.log(search);
   
   return (
     <div className='p-3 shadow shadow-lg flex justify-around items-center'>
